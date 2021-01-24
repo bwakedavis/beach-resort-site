@@ -45,7 +45,15 @@
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
     </ul>
-
+    <nav>
+        <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="#!" class="breadcrumb">First</a>
+            <a href="#!" class="breadcrumb">Second</a>
+            <a href="#!" class="breadcrumb">Third</a>
+          </div>
+        </div>
+      </nav>
     <div class="container ">
         <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
         <div class="modal" id="terms">
@@ -258,6 +266,7 @@
  <script>
      $(document).ready(function(){
          $('.sidenav').sidenav()
+         $('.modal').modal()
      })
  </script>
 </body>
