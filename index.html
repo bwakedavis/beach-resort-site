@@ -10,13 +10,30 @@
 
     <title>Hello, world!</title>
     <style>
-  
+  a{
+    color: aliceblue;
+  }
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-toggleable-sm bg-info navbar-inverse text-white">
+      <div class="container">
+        <button class="navabar-toggler" data-toggle="collapse" data-target="#main-nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <div class="navba-nav">
+            <a href="#" class="nav-item nav-link active">Home</a>
+            <a href="#" class="nav-item nav-link active">About</a>
+            <a href="#" class="nav-item nav-link active">Services</a>
+            <a href="#" class="nav-item nav-link active">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-      <h1 class="dispaly-1">Welcome to the Dojo</h1>
+      <h1 class="dispaly-1 text-info" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Welcome to the Dojo</h1>
       <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptate quasi placeat voluptatibus quis beatae minus illo laboriosam aut quo?</p>
     </div>
     </div>
@@ -90,6 +107,11 @@
       </div>
     </div>
   </main>
+  <script>
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+   })
+  </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
